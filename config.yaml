@@ -1,0 +1,12 @@
+---
+- name: gke-test
+  project: papaya-lab
+  vpc: default
+  region: us-central1
+  machine-type: e2-custom-2-4096
+  serviceaccount:
+    gce: gke-base-sa
+    k8s: default
+  
+
+
