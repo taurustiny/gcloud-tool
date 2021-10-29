@@ -16,5 +16,6 @@ func Auth() (ctx context.Context, client *container.ClusterManagerClient, err er
 	if err != nil {
 		log.Fatal(err)
 	}
+	
 	return ctx, client, err
 }

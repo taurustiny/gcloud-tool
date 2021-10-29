@@ -1,11 +1,13 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 
-	"github.com/taurustiny/gcloud-tool/services/gke"
+	// "github.com/taurustiny/gcloud-tool/services/gke"
+	"github.com/taurustiny/gcloud-tool/config"
 )
 
 func main () {
-	fmt.Print(gke.ListCluster())
+	// fmt.Print(gke.ListCluster())
+	config.GetConfig()
 }

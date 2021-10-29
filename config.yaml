@@ -1,12 +1,32 @@
----
-- name: gke-test
+gke:
+- name: test01
   project: papaya-lab
-  vpc: default
+  vpc:
+    network: default
+    subnetwork: default
   region: us-central1
   machine-type: e2-custom-2-4096
+  nodes:
+    max:
+    min:
+    number:
   serviceaccount:
     gce: gke-base-sa
     k8s: default
+  labels:
+  - service:
+    module:
+    env:
+    owner:
+    dev:
+    ops:
+- name: test02
+  project: papaya-lab
+  vpc:
+    network: test
+    subnetwork: test
+  region: us-east
+  
   
 
 
